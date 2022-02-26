@@ -1775,6 +1775,7 @@ input, select, textarea {
 		width: -ms-max-content;
 		width: max-content;
 		margin-bottom: 2em;
+		display: block;
 	}
 
 		header.major > :first-child {
@@ -1782,14 +1783,22 @@ input, select, textarea {
 			width: calc(100% + 0.5em);
 		}
 
-			header.major > :first-child:after {
-				content: '';
-				background-color: #ffffff;
-				display: block;
-				height: 2px;
-				margin: 0 auto;
-				width: 50%;
-			}
+		header.major > h1:after {
+			content: "";
+			height: 3px;
+			display: block;
+			margin: auto;
+			background-color: #ffffff;
+			width: 50%;
+		}
+
+
+
+		header.major > h3 {
+			border-bottom: 3px solid white;
+			text-align: center;
+		}
+
 
 		header.major > p {
 			font-size: 0.7em;
@@ -3434,6 +3443,7 @@ input, select, textarea {
 			transition: opacity 1.5s ease, transform 0.5s ease-out, filter 0.5s ease, -webkit-filter 0.5s ease;
 			padding: 0 !important;
 			position: relative;
+			display: block;
 			z-index: 2;
 		}
 
