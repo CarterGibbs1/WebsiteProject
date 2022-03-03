@@ -2104,6 +2104,28 @@ input, select, textarea {
 			padding: 0;
 		}
 
+
+		 .outline {
+			appearance: none;
+			transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+			background-color: transparent;
+			border: 0;
+			border-radius: 0;
+			box-shadow: inset 0 0 0 2px #ffffff;
+			color: #ffffff;
+			cursor: default;
+			display: block;
+			font-size: 0.8em;
+			font-weight: 600;
+			height: 3.5em;
+			letter-spacing: 0.25em;
+			line-height: 3.5em;
+			padding: 0 1.75em;
+			text-align: center;
+			text-decoration: none;
+			text-transform: uppercase;
+			white-space: nowrap;
+		}
 /* Icon */
 
 	.icon {
@@ -2127,6 +2149,27 @@ input, select, textarea {
 
 		.icon > .label {
 			display: none;
+		}
+		.icon > .label > .outline {
+			appearance: none;
+			transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+			background-color: transparent;
+			border: 0;
+			border-radius: 0;
+			box-shadow: inset 0 0 0 2px #ffffff;
+			color: #ffffff;
+			cursor: default;
+			display: bl-block;
+			font-size: 0.8em;
+			font-weight: 600;
+			height: 3.5em;
+			letter-spacing: 0.25em;
+			line-height: 3.5em;
+			padding: 0 1.75em;
+			text-align: center;
+			text-decoration: none;
+			text-transform: uppercase;
+			white-space: nowrap;
 		}
 
 		.icon:before {
@@ -2506,6 +2549,32 @@ input, select, textarea {
 			table.alt tfoot {
 				border-top: 0;
 			}
+
+
+/* Outlined Text */
+    outline,
+	.outline {
+		appearance: none;
+		transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+		background-color: transparent;
+		border: 0;
+		border-radius: 0;
+		box-shadow: inset 0 0 0 2px #ffffff;
+		color: #ffffff;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 0.8em;
+		font-weight: 600;
+		height: 3.5em;
+		letter-spacing: 0.25em;
+		line-height: 3.5em;
+		padding: 0 1.75em;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+
 
 /* Button */
 
@@ -3544,10 +3613,12 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#banner {
-				background-attachment: scroll;
+				background-attachment: fixed;
 			}
 
 		}
+
+
 
 		@media screen and (max-width: 736px) {
 
@@ -3717,6 +3788,13 @@ input, select, textarea {
 		}
 
 /* Footer */
+
+	.hide{
+		display:none;
+	}
+	.show{
+		display:block;
+	}
 
 	#footer .copyright {
 		font-size: 0.8em;
